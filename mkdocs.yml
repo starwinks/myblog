@@ -22,11 +22,10 @@ copyright: 'Copyright &copy; 2025 starwinks'
 # Navigation (文章结构)
 # ===============================
 nav:
-  - 首页: index.md
-  - 博客:
-      - Python: blog/python.md
-      - C++: blog/cpp.md
-  - 关于: about.md
+  - Welcome: index.md
+  - 数论: 
+    - 数论部分简介: number_theory/index.md 
+  - 关于: about/index.md
 
 # ===============================
 # Theme: Material
