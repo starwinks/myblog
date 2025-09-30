@@ -1,0 +1,111 @@
+# ===============================
+# Project Information
+# ===============================
+site_name: Starwinks Blog
+site_description: 我的编程笔记和博客
+site_author: starwinks
+site_url: https://starwinks.github.io/myblog  # 替换为你的 GitHub Pages 地址
+strict: false
+
+# ===============================
+# Repository (用于“在 GitHub 编辑”按钮)
+# ===============================
+repo_url: 'https://github.com/starwinks/myblog'
+edit_uri: 'edit/main/docs/'
+
+# ===============================
+# Copyright
+# ===============================
+copyright: 'Copyright &copy; 2025 starwinks'
+
+# ===============================
+# Navigation (文章结构)
+# ===============================
+nav:
+  - 首页: index.md
+  - 博客:
+      - Python: blog/python.md
+      - C++: blog/cpp.md
+  - 关于: about.md
+
+# ===============================
+# Theme: Material
+# ===============================
+theme:
+  name: 'material'
+  language: 'zh'
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text:
+      family: 'Fira Sans'
+      size: 16
+    code:
+      family: 'Fira Mono'
+  features:
+    - navigation.tabs
+    - navigation.instant
+  icon:
+    logo: 'material/school'
+  favicon: '_static/favicon.ico'
+
+# ===============================
+# Plugins
+# ===============================
+plugins:
+  - search
+  - git-revision-date-localized
+  - blog:
+      path: blog
+      readtime: true
+
+# ===============================
+# Markdown Extensions
+# ===============================
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# ===============================
+# Extra JS / CSS
+# ===============================
+extra_javascript:
+  - 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js'  # 用 CDN 加载 KaTeX
+extra_css:
+  - '_static/css/extra.css'
