@@ -26,6 +26,8 @@ nav:
   - 数论: 
     - 数论部分简介: number_theory/index.md 
   - 关于: about/index.md
+  - dp: 
+    - 入门dp: dp/basic_dp.md 
 
 # ===============================
 # Theme: Material
@@ -106,5 +108,8 @@ markdown_extensions:
 # ===============================
 extra_javascript:
   - 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js'  # 用 CDN 加载 KaTeX
+  - 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js'  # KaTeX auto-render
+  - '_static/js/katex-render.js'
 extra_css:
+  - 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css'  # KaTeX 样式
   - '_static/css/extra.css'

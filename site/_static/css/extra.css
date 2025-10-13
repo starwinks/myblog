@@ -1,0 +1,12 @@
+/* 站点自定义样式。此文件由 mkdocs.yml 的 extra_css 引用。
+   目前用于与 KaTeX 配合的微调样式 */
+
+/* 确保数学公式周围有一点间距 */
+.katex {
+  margin: 0.2em 0;
+}
+
+/* 保持 pre/code 样式不被 auto-render 改变 */
+pre, code {
+  white-space: pre-wrap;
+}
