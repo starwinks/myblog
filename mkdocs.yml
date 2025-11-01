@@ -28,6 +28,8 @@ nav:
   - 关于: about/index.md
   - dp: 
     - 入门dp: dp/basic_dp.md 
+  - CSAPP:
+    - 第二章: csapp/chapter2.md
 
 # ===============================
 # Theme: Material
