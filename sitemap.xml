@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://starwinks.github.io/myblog/</loc>
-         <lastmod>2025-11-01</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://starwinks.github.io/myblog/about/</loc>
-         <lastmod>2025-11-01</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://starwinks.github.io/myblog/blog/</loc>
-         <lastmod>2025-11-01</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://starwinks.github.io/myblog/csapp/chapter2/</loc>
-         <lastmod>2025-11-01</lastmod>
+         <lastmod>2025-11-04</lastmod>
+    </url>
+    <url>
+         <loc>https://starwinks.github.io/myblog/csapp/chapter3/</loc>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://starwinks.github.io/myblog/dp/basic_dp/</loc>
-         <lastmod>2025-11-01</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
     <url>
          <loc>https://starwinks.github.io/myblog/number_theory/</loc>
-         <lastmod>2025-11-01</lastmod>
+         <lastmod>2025-11-04</lastmod>
     </url>
 </urlset>
