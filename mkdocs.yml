@@ -30,6 +30,7 @@ nav:
     - 入门dp: dp/basic_dp.md 
   - CSAPP:
     - 第二章: csapp/chapter2.md
+    - 第三章: csapp/chapter3.md
 
 # ===============================
 # Theme: Material
