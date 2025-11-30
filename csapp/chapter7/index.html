@@ -12,13 +12,13 @@
         <meta name="author" content="starwinks">
       
       
-        <link rel="canonical" href="https://starwinks.github.io/myblog/csapp/chapter2/">
+        <link rel="canonical" href="https://starwinks.github.io/myblog/csapp/chapter7/">
       
       
-        <link rel="prev" href="../../dp/basic_dp/">
+        <link rel="prev" href="../chapter6/">
       
       
-        <link rel="next" href="../chapter3/">
+        <link rel="next" href="../../ComputerNetWork/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>第二章 - Starwinks Blog</title>
+        <title>第七章 - Starwinks Blog</title>
       
     
     
@@ -83,6 +83,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -113,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              第二章
+              第七章
             
           </span>
         </div>
@@ -306,7 +311,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../chapter2/" class="md-tabs__link">
           
   
   
@@ -665,17 +670,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
         
   
   
@@ -691,7 +689,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -757,10 +754,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../chapter7/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第七章
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -776,6 +800,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.概述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2compiler-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.编译器驱动程序(compiler driver)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.静态链接
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -832,6 +909,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.概述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2compiler-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.编译器驱动程序(compiler driver)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.静态链接
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -851,9 +971,27 @@
   
 
 
-  <h1>第二章</h1>
-
-
+<h1 id="_1">链接<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="1">1.概述<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>链接(linking)是将各种<strong>代码和数据片段</strong>收集并组合成一个单一文件的过程.</li>
+<li>
+<ul>
+<li>编译时(compile time) 源代码被翻译为目标代码时</li>
+</ul>
+</li>
+<li>加载时(load time) 程序被加载器(loader)加载到内存并执行时</li>
+<li>运行时(run time) 应用程序执行</li>
+</ul>
+<h2 id="2compiler-driver">2.编译器驱动程序(compiler driver)<a class="headerlink" href="#2compiler-driver" title="Permanent link">&para;</a></h2>
+<ul>
+<li>C预处理器(cpp): 将源程序翻译为一个<strong>ASCII</strong>码中间文件(.i),处理所有的宏定义和文件包含指令.(#include,#define)</li>
+<li>C编译器(cc1): 将.i文件翻译为<strong>ASCII</strong>汇编语言文件(.s)</li>
+<li>汇编器(as): 将.s文件翻译为可重定位目标文件(relocatable object file)(.o)(二进制格式)</li>
+<li>链接器(ld): 将若干.o文件和必要的库文件组合成一个可执行文件(executable file)(a.out)
+操作系统将可执行文件的代码和数据加载到内存,将控制转移到程序开头</li>
+</ul>
+<h2 id="3">3.静态链接<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 
 
 
@@ -874,7 +1012,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月1日 15:55:35 UTC">2025年11月1日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月30日 07:10:26 UTC">2025年11月30日</span>
   </span>
 
     
